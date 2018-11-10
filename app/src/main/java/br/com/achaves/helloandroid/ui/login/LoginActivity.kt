@@ -23,7 +23,7 @@ class LoginActivity : AppCompatActivity() {
         //está redirecionando para a classe MainActivity
         val intent = Intent(this, MainActivity::class.java)
         intent.putExtra("nome", inputNome.value())
-        intent.putExtra("telefone", inputTelefone.value())
+        intent.putExtra("telefone", inputTelefone.value()) 
         startActivity(intent)
     }
 }
