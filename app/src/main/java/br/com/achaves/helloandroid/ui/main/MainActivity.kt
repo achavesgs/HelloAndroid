@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         cbBacon.isChecked = mainViewModel.baconSelecionado;
         cbCalabresa.isChecked = mainViewModel.calabresaSelecionada;
         cbPortuguesa.isChecked = mainViewModel.portuguesaSelecionada;
-
+    
         btCalcular.setOnClickListener {
             val intent = Intent(this, CheckoutActivity::class.java)
             intent.putExtra("pedido", gerarPedido())
